@@ -1,7 +1,6 @@
 from django.urls import reverse
 from rest_framework import status
 from rest_framework.test import APITestCase
-from rest_framework_simplejwt.tokens import RefreshToken
 
 from main.models import Module
 from users.models import User
@@ -62,7 +61,7 @@ class ModuleTestCase(APITestCase):
         )
 
     def test_list_module(self):
-        '''Тест вывода списка модулей'''
+        """Тест вывода списка модулей"""
         response = self.client.get(
             reverse('main:module-list'),
         )
