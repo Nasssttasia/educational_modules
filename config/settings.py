@@ -86,6 +86,8 @@ DATABASES = {
         'NAME': 'ed_modules',
         'USER': 'postgres',
         'PASSWORD': 'nastasia1',
+        'HOST': 'db',
+        'PORT': '5432'
     }
 }
 
